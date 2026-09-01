@@ -82,9 +82,6 @@ stencil_out/
 #   *.kicad_sym  *.pretty/  *.3dshapes/   project-local libraries
 
 # --- repo-specific, below the canonical block ---------------------------------
-# Firmware handoff bundles are shared out-of-band, not tracked
-OpenRX-Gemini/firmware-handoff/
-OpenRX-Gemini/firmware-handoff.zip
 # Regenerable analysis dumps
 netlist.xml
 schematic_analysis.json
