@@ -22,6 +22,25 @@ separate ceramic antenna serves the ESP32-C3 Wi-Fi interface.
 | Board setup | Standard: 6 layers, 0.09 mm clearance and track, via 0.35 on 0.20 drill |
 | License | CERN-OHL-S-2.0 |
 
+## Parts and datasheets
+
+- **Per-repository part index:** `hardware/OpenRX-Mono.kicad_sch` and its
+  listed sub-sheet are authoritative for what this board fits. Export the
+  netlist with the command below when a script-readable board index is needed;
+  do not maintain a second hand-written BOM.
+- **Proven shared parts:**
+  `hardware/KiCad-Library/PARTS-USED.md` is the catalogue index. Its `Boards`
+  column identifies every repository using each LCSC part; filter it for
+  `OpenRX-Mono` to get this repository's proven shared-part view.
+- **Exact datasheets:**
+  `hardware/KiCad-Library/datasheet/manifest.json` maps shared symbols to the
+  committed PDFs and their SHA-256 hashes. The PDFs live in
+  `hardware/KiCad-Library/datasheet/`, and symbol links resolve there through
+  `OPENDRONE_LIB`.
+- **Local-only parts:** inspect `hardware/lib.pretty/` and
+  `hardware/lib.3dshapes/`, then verify supplier fields in the board
+  schematic. Do not duplicate a shared part or datasheet.
+
 ## Rules
 
 Identical in every OpenDrone board repo. Do not edit here; edit the template.
