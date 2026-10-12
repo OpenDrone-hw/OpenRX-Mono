@@ -31,7 +31,7 @@ shared U.FL antenna interface.
 | Dimensions | 10.0 x 17.3 mm |
 | PCB | 6-layer, 1.0 mm |
 
-Technical write-up, part list and layout constraints: [AGENTS.md](AGENTS.md).
+Technical write-up, part list and layout constraints: in the git history of AGENTS.md, `git show 4393555:AGENTS.md`.
 
 ## In the line
 
