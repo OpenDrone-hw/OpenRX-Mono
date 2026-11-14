@@ -1,8 +1,11 @@
 # OpenRX Mono
 
-Open-source dual-band ExpressLRS receiver for FPV aircraft. OpenRX Mono uses an
-ESP32-C3 and one LR1121 with a 2.4 GHz PA/LNA, sub-GHz matching network and a
-shared U.FL antenna interface.
+Open-source dual-band (868/915 MHz and 2.4 GHz) ExpressLRS radio control receiver
+module with telemetry, for any radio-controlled build: cars, boats, robots and
+aircraft. OpenRX Mono uses an ESP32-C3 and one LR1121 with a 2.4 GHz PA/LNA,
+sub-GHz matching network and a shared U.FL antenna interface.
+It passes the received channels over serial (CRSF) on its RX and TX pads to a
+controller, for example a flight controller or a vehicle or robot controller.
 
 <p>
 <img src="images/front.png" width="400" alt="OpenRX Mono front" />
