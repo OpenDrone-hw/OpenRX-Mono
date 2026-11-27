@@ -10,6 +10,15 @@
         "min_version": "3.5.0",
         "platform": "esp32-c3",
         "firmware": "Unified_ESP32C3_LR1121_RX"
+      },
+      "mono_eu": {
+        "product_name": "OpenRX Mono Dual Band RX EU",
+        "lua_name": "ORX Mono EU",
+        "layout_file": "OpenRX Mono LR1121 EU.json",
+        "upload_methods": ["uart", "wifi", "betaflight"],
+        "min_version": "3.5.0",
+        "platform": "esp32-c3",
+        "firmware": "Unified_ESP32C3_LR1121_RX"
       }
     }
   }
