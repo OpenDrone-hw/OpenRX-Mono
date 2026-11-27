@@ -66,6 +66,12 @@ version 3.5.0. Upload methods are UART, Wi-Fi and Betaflight passthrough. The
 authoritative GPIO, RF-switch table and power values are in
 `firmware/OpenRX Mono LR1121.json`.
 
+EU build (target key `mono_eu`): `firmware/OpenRX Mono LR1121 EU.json`, the same
+pins with one power level per band: 2.4 GHz chip setting -17 dBm into the
+RFX2401C (5 dBm conducted), 868 MHz chip setting 12 dBm (10 dBm conducted).
+Built with `Regulatory_Domain_EU_CE_2400` and domain `eu_868`. Both conducted
+levels are to be confirmed by measurement.
+
 ## Repo
 
 | | |
@@ -77,7 +83,7 @@ authoritative GPIO, RF-switch table and power values are in
 | Local library | `hardware/lib.pretty/` and `hardware/lib.3dshapes/`, nickname `OpenRX-Shared` retained by the design; `shared/libs/OpenRX-Shared.3dshapes` is a compatibility link for embedded legacy model paths |
 | Shared library | `hardware/KiCad-Library/`, submodule of [OpenDrone-hw/KiCad-Library](https://github.com/OpenDrone-hw/KiCad-Library), nickname `OpenDrone`; exact component datasheets resolve through the project text variable `OPENDRONE_LIB` |
 | Design rules | `hardware/OpenRX-Mono.kicad_dru` |
-| Firmware target | `firmware/OpenRX Mono LR1121.json` and `firmware/targets_entries.json` |
+| Firmware target | `firmware/OpenRX Mono LR1121.json`, `firmware/OpenRX Mono LR1121 EU.json` and `firmware/targets_entries.json` |
 
 ## Parts and datasheets
 
